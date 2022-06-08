@@ -1,0 +1,15 @@
+//
+//  MLiveCCPlayer.pch
+//  MLiveCCPlayer
+//
+//  Created by jlubobo on 2017/5/11.
+//  Copyright © 2017年 cc. All rights reserved.
+//
+
+#ifndef MLiveCCPlayer_pch
+#define MLiveCCPlayer_pch
+
+// Include any system framework and library headers here that should be included in all compilation units.
+// You will also need to set the Prefix Header build setting of one or more of your targets to reference this file.
+
+#endif /* MLiveCCPlayer_pch */

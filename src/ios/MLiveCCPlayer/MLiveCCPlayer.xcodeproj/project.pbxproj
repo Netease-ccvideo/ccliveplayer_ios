@@ -1,0 +1,696 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		427EDF452535DFE400C6498A /* CCMLiveMovieWriter.m in Sources */ = {isa = PBXBuildFile; fileRef = 427EDF422535DFE400C6498A /* CCMLiveMovieWriter.m */; };
+		427EDF462535DFE400C6498A /* CCMLiveMovieWriter.h in Headers */ = {isa = PBXBuildFile; fileRef = 427EDF442535DFE400C6498A /* CCMLiveMovieWriter.h */; };
+		4298DC052832366900D174CC /* MLiveDefines.h in Headers */ = {isa = PBXBuildFile; fileRef = 4298DC042832366900D174CC /* MLiveDefines.h */; };
+		4298DC08283236E600D174CC /* MLiveDeviceMgr.m in Sources */ = {isa = PBXBuildFile; fileRef = 4298DC06283236E600D174CC /* MLiveDeviceMgr.m */; };
+		4298DC09283236E600D174CC /* MLiveDeviceMgr.h in Headers */ = {isa = PBXBuildFile; fileRef = 4298DC07283236E600D174CC /* MLiveDeviceMgr.h */; };
+		4298DC0C2832370F00D174CC /* MLiveCCKeyChain.m in Sources */ = {isa = PBXBuildFile; fileRef = 4298DC0A2832370F00D174CC /* MLiveCCKeyChain.m */; };
+		4298DC0D2832370F00D174CC /* MLiveCCKeyChain.h in Headers */ = {isa = PBXBuildFile; fileRef = 4298DC0B2832370F00D174CC /* MLiveCCKeyChain.h */; };
+		429E9BF21D99143F00D17204 /* libIJKMediaPlayer.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 42A289A71D9911B800C2A01D /* libIJKMediaPlayer.a */; };
+		42BC9F491D98FD450022EF11 /* MLiveCCPlayer.h in Headers */ = {isa = PBXBuildFile; fileRef = 42BC9F481D98FD450022EF11 /* MLiveCCPlayer.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		42BC9F501D98FD450022EF11 /* MLiveCCPlayer.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 42BC9F451D98FD450022EF11 /* MLiveCCPlayer.framework */; };
+		42BC9F551D98FD450022EF11 /* MLiveCCPlayerTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 42BC9F541D98FD450022EF11 /* MLiveCCPlayerTests.m */; };
+		42C1099922FA65CC0062C3B9 /* MLiveVideoFrameConverter.h in Headers */ = {isa = PBXBuildFile; fileRef = 42C1099722FA65CC0062C3B9 /* MLiveVideoFrameConverter.h */; };
+		42C1099A22FA65CC0062C3B9 /* MLiveVideoFrameConverter.m in Sources */ = {isa = PBXBuildFile; fileRef = 42C1099822FA65CC0062C3B9 /* MLiveVideoFrameConverter.m */; };
+		42CFD6A41D9900550035A0B6 /* MLiveCCPlayer.m in Sources */ = {isa = PBXBuildFile; fileRef = 42CFD6A31D9900550035A0B6 /* MLiveCCPlayer.m */; };
+		D90D0A961EC431EC008377FA /* MLiveCCPlayer.pch in Headers */ = {isa = PBXBuildFile; fileRef = D90D0A951EC431EC008377FA /* MLiveCCPlayer.pch */; };
+		D991B54E1F7CB66F00D4D991 /* MLiveVideoFrame.h in Headers */ = {isa = PBXBuildFile; fileRef = D991B54D1F7CB66E00D4D991 /* MLiveVideoFrame.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		D9942BDF1F05E465006A55CE /* MLiveCCRenderVTB.h in Headers */ = {isa = PBXBuildFile; fileRef = D9942BDB1F05E465006A55CE /* MLiveCCRenderVTB.h */; };
+		D9942BE01F05E465006A55CE /* MLiveCCRenderVTB.m in Sources */ = {isa = PBXBuildFile; fileRef = D9942BDC1F05E465006A55CE /* MLiveCCRenderVTB.m */; };
+		D9942BE11F05E465006A55CE /* MLiveCCRenderYUV.h in Headers */ = {isa = PBXBuildFile; fileRef = D9942BDD1F05E465006A55CE /* MLiveCCRenderYUV.h */; };
+		D9942BE21F05E465006A55CE /* MLiveCCRenderYUV.m in Sources */ = {isa = PBXBuildFile; fileRef = D9942BDE1F05E465006A55CE /* MLiveCCRenderYUV.m */; };
+		D9942BE51F05E499006A55CE /* MLiveCCRender.h in Headers */ = {isa = PBXBuildFile; fileRef = D9942BE41F05E499006A55CE /* MLiveCCRender.h */; };
+		D9F5CEB71F04FA73004204E4 /* basic_types.h in Headers */ = {isa = PBXBuildFile; fileRef = D9F5CEA21F04FA73004204E4 /* basic_types.h */; };
+		D9F5CEB81F04FA73004204E4 /* compare.h in Headers */ = {isa = PBXBuildFile; fileRef = D9F5CEA31F04FA73004204E4 /* compare.h */; };
+		D9F5CEB91F04FA73004204E4 /* convert.h in Headers */ = {isa = PBXBuildFile; fileRef = D9F5CEA41F04FA73004204E4 /* convert.h */; };
+		D9F5CEBA1F04FA73004204E4 /* convert_argb.h in Headers */ = {isa = PBXBuildFile; fileRef = D9F5CEA51F04FA73004204E4 /* convert_argb.h */; };
+		D9F5CEBB1F04FA73004204E4 /* convert_from.h in Headers */ = {isa = PBXBuildFile; fileRef = D9F5CEA61F04FA73004204E4 /* convert_from.h */; };
+		D9F5CEBC1F04FA73004204E4 /* convert_from_argb.h in Headers */ = {isa = PBXBuildFile; fileRef = D9F5CEA71F04FA73004204E4 /* convert_from_argb.h */; };
+		D9F5CEBD1F04FA73004204E4 /* cpu_id.h in Headers */ = {isa = PBXBuildFile; fileRef = D9F5CEA81F04FA73004204E4 /* cpu_id.h */; };
+		D9F5CEBE1F04FA73004204E4 /* format_conversion.h in Headers */ = {isa = PBXBuildFile; fileRef = D9F5CEA91F04FA73004204E4 /* format_conversion.h */; };
+		D9F5CEBF1F04FA73004204E4 /* mjpeg_decoder.h in Headers */ = {isa = PBXBuildFile; fileRef = D9F5CEAA1F04FA73004204E4 /* mjpeg_decoder.h */; };
+		D9F5CEC01F04FA73004204E4 /* planar_functions.h in Headers */ = {isa = PBXBuildFile; fileRef = D9F5CEAB1F04FA73004204E4 /* planar_functions.h */; };
+		D9F5CEC11F04FA73004204E4 /* rotate.h in Headers */ = {isa = PBXBuildFile; fileRef = D9F5CEAC1F04FA73004204E4 /* rotate.h */; };
+		D9F5CEC21F04FA73004204E4 /* rotate_argb.h in Headers */ = {isa = PBXBuildFile; fileRef = D9F5CEAD1F04FA73004204E4 /* rotate_argb.h */; };
+		D9F5CEC31F04FA73004204E4 /* row.h in Headers */ = {isa = PBXBuildFile; fileRef = D9F5CEAE1F04FA73004204E4 /* row.h */; };
+		D9F5CEC41F04FA73004204E4 /* scale.h in Headers */ = {isa = PBXBuildFile; fileRef = D9F5CEAF1F04FA73004204E4 /* scale.h */; };
+		D9F5CEC51F04FA73004204E4 /* scale_argb.h in Headers */ = {isa = PBXBuildFile; fileRef = D9F5CEB01F04FA73004204E4 /* scale_argb.h */; };
+		D9F5CEC61F04FA73004204E4 /* scale_row.h in Headers */ = {isa = PBXBuildFile; fileRef = D9F5CEB11F04FA73004204E4 /* scale_row.h */; };
+		D9F5CEC71F04FA73004204E4 /* version.h in Headers */ = {isa = PBXBuildFile; fileRef = D9F5CEB21F04FA73004204E4 /* version.h */; };
+		D9F5CEC81F04FA73004204E4 /* video_common.h in Headers */ = {isa = PBXBuildFile; fileRef = D9F5CEB31F04FA73004204E4 /* video_common.h */; };
+		D9F5CEC91F04FA73004204E4 /* libyuv.h in Headers */ = {isa = PBXBuildFile; fileRef = D9F5CEB41F04FA73004204E4 /* libyuv.h */; };
+		D9F5CECA1F04FA73004204E4 /* libyuv.a in Frameworks */ = {isa = PBXBuildFile; fileRef = D9F5CEB61F04FA73004204E4 /* libyuv.a */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		42A289A61D9911B800C2A01D /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 42A289A21D9911B800C2A01D /* IJKMediaPlayer.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = E6903EB917EAF6C500CFD954;
+			remoteInfo = IJKMediaPlayer;
+		};
+		42BC9F511D98FD450022EF11 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 42BC9F3C1D98FD450022EF11 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 42BC9F441D98FD450022EF11;
+			remoteInfo = MLiveCCPlayer;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		42CFD6C01D9908350035A0B6 /* Copy Files */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 7;
+			files = (
+			);
+			name = "Copy Files";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
+
+/* Begin PBXFileReference section */
+		427EDF422535DFE400C6498A /* CCMLiveMovieWriter.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CCMLiveMovieWriter.m; sourceTree = "<group>"; };
+		427EDF442535DFE400C6498A /* CCMLiveMovieWriter.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CCMLiveMovieWriter.h; sourceTree = "<group>"; };
+		4298DC042832366900D174CC /* MLiveDefines.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MLiveDefines.h; sourceTree = "<group>"; };
+		4298DC06283236E600D174CC /* MLiveDeviceMgr.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MLiveDeviceMgr.m; sourceTree = "<group>"; };
+		4298DC07283236E600D174CC /* MLiveDeviceMgr.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MLiveDeviceMgr.h; sourceTree = "<group>"; };
+		4298DC0A2832370F00D174CC /* MLiveCCKeyChain.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MLiveCCKeyChain.m; sourceTree = "<group>"; };
+		4298DC0B2832370F00D174CC /* MLiveCCKeyChain.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MLiveCCKeyChain.h; sourceTree = "<group>"; };
+		42A289A21D9911B800C2A01D /* IJKMediaPlayer.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = IJKMediaPlayer.xcodeproj; path = ../IJKMediaPlayer/IJKMediaPlayer.xcodeproj; sourceTree = "<group>"; };
+		42BC9F451D98FD450022EF11 /* MLiveCCPlayer.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = MLiveCCPlayer.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		42BC9F481D98FD450022EF11 /* MLiveCCPlayer.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = MLiveCCPlayer.h; sourceTree = "<group>"; };
+		42BC9F4A1D98FD450022EF11 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		42BC9F4F1D98FD450022EF11 /* MLiveCCPlayerTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = MLiveCCPlayerTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		42BC9F541D98FD450022EF11 /* MLiveCCPlayerTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = MLiveCCPlayerTests.m; sourceTree = "<group>"; };
+		42BC9F561D98FD450022EF11 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		42C1099722FA65CC0062C3B9 /* MLiveVideoFrameConverter.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = MLiveVideoFrameConverter.h; sourceTree = "<group>"; };
+		42C1099822FA65CC0062C3B9 /* MLiveVideoFrameConverter.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = MLiveVideoFrameConverter.m; sourceTree = "<group>"; };
+		42CFD6A31D9900550035A0B6 /* MLiveCCPlayer.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MLiveCCPlayer.m; sourceTree = "<group>"; };
+		42CFD6AF1D9903370035A0B6 /* libz.tbd */ = {isa = PBXFileReference; lastKnownFileType = "sourcecode.text-based-dylib-definition"; name = libz.tbd; path = usr/lib/libz.tbd; sourceTree = SDKROOT; };
+		D90D0A951EC431EC008377FA /* MLiveCCPlayer.pch */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MLiveCCPlayer.pch; sourceTree = "<group>"; };
+		D991B54D1F7CB66E00D4D991 /* MLiveVideoFrame.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = MLiveVideoFrame.h; sourceTree = "<group>"; };
+		D9942BDB1F05E465006A55CE /* MLiveCCRenderVTB.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MLiveCCRenderVTB.h; sourceTree = "<group>"; };
+		D9942BDC1F05E465006A55CE /* MLiveCCRenderVTB.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MLiveCCRenderVTB.m; sourceTree = "<group>"; };
+		D9942BDD1F05E465006A55CE /* MLiveCCRenderYUV.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MLiveCCRenderYUV.h; sourceTree = "<group>"; };
+		D9942BDE1F05E465006A55CE /* MLiveCCRenderYUV.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MLiveCCRenderYUV.m; sourceTree = "<group>"; };
+		D9942BE41F05E499006A55CE /* MLiveCCRender.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MLiveCCRender.h; sourceTree = "<group>"; };
+		D9D0CAB1204942B900B14CD1 /* libavutil.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; name = libavutil.a; path = ../build/universal/lib/libavutil.a; sourceTree = "<group>"; };
+		D9D0CAB2204942B900B14CD1 /* libavformat.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; name = libavformat.a; path = ../build/universal/lib/libavformat.a; sourceTree = "<group>"; };
+		D9D0CAB3204942B900B14CD1 /* libswscale.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; name = libswscale.a; path = ../build/universal/lib/libswscale.a; sourceTree = "<group>"; };
+		D9D0CAB4204942B900B14CD1 /* libswresample.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; name = libswresample.a; path = ../build/universal/lib/libswresample.a; sourceTree = "<group>"; };
+		D9D0CAB5204942B900B14CD1 /* libavcodec.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; name = libavcodec.a; path = ../build/universal/lib/libavcodec.a; sourceTree = "<group>"; };
+		D9F5CEA21F04FA73004204E4 /* basic_types.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = basic_types.h; sourceTree = "<group>"; };
+		D9F5CEA31F04FA73004204E4 /* compare.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = compare.h; sourceTree = "<group>"; };
+		D9F5CEA41F04FA73004204E4 /* convert.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = convert.h; sourceTree = "<group>"; };
+		D9F5CEA51F04FA73004204E4 /* convert_argb.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = convert_argb.h; sourceTree = "<group>"; };
+		D9F5CEA61F04FA73004204E4 /* convert_from.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = convert_from.h; sourceTree = "<group>"; };
+		D9F5CEA71F04FA73004204E4 /* convert_from_argb.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = convert_from_argb.h; sourceTree = "<group>"; };
+		D9F5CEA81F04FA73004204E4 /* cpu_id.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = cpu_id.h; sourceTree = "<group>"; };
+		D9F5CEA91F04FA73004204E4 /* format_conversion.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = format_conversion.h; sourceTree = "<group>"; };
+		D9F5CEAA1F04FA73004204E4 /* mjpeg_decoder.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = mjpeg_decoder.h; sourceTree = "<group>"; };
+		D9F5CEAB1F04FA73004204E4 /* planar_functions.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = planar_functions.h; sourceTree = "<group>"; };
+		D9F5CEAC1F04FA73004204E4 /* rotate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = rotate.h; sourceTree = "<group>"; };
+		D9F5CEAD1F04FA73004204E4 /* rotate_argb.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = rotate_argb.h; sourceTree = "<group>"; };
+		D9F5CEAE1F04FA73004204E4 /* row.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = row.h; sourceTree = "<group>"; };
+		D9F5CEAF1F04FA73004204E4 /* scale.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = scale.h; sourceTree = "<group>"; };
+		D9F5CEB01F04FA73004204E4 /* scale_argb.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = scale_argb.h; sourceTree = "<group>"; };
+		D9F5CEB11F04FA73004204E4 /* scale_row.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = scale_row.h; sourceTree = "<group>"; };
+		D9F5CEB21F04FA73004204E4 /* version.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = version.h; sourceTree = "<group>"; };
+		D9F5CEB31F04FA73004204E4 /* video_common.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = video_common.h; sourceTree = "<group>"; };
+		D9F5CEB41F04FA73004204E4 /* libyuv.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = libyuv.h; sourceTree = "<group>"; };
+		D9F5CEB61F04FA73004204E4 /* libyuv.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; path = libyuv.a; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		42BC9F411D98FD450022EF11 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				D9F5CECA1F04FA73004204E4 /* libyuv.a in Frameworks */,
+				429E9BF21D99143F00D17204 /* libIJKMediaPlayer.a in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		42BC9F4C1D98FD450022EF11 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				42BC9F501D98FD450022EF11 /* MLiveCCPlayer.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		42A289A31D9911B800C2A01D /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				42A289A71D9911B800C2A01D /* libIJKMediaPlayer.a */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		42BC9F3B1D98FD450022EF11 = {
+			isa = PBXGroup;
+			children = (
+				42A289A21D9911B800C2A01D /* IJKMediaPlayer.xcodeproj */,
+				42CFD6AF1D9903370035A0B6 /* libz.tbd */,
+				42BC9F471D98FD450022EF11 /* MLiveCCPlayer */,
+				42BC9F531D98FD450022EF11 /* MLiveCCPlayerTests */,
+				42BC9F461D98FD450022EF11 /* Products */,
+				D9D0CAAF204942B700B14CD1 /* Frameworks */,
+			);
+			sourceTree = "<group>";
+		};
+		42BC9F461D98FD450022EF11 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				42BC9F451D98FD450022EF11 /* MLiveCCPlayer.framework */,
+				42BC9F4F1D98FD450022EF11 /* MLiveCCPlayerTests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		42BC9F471D98FD450022EF11 /* MLiveCCPlayer */ = {
+			isa = PBXGroup;
+			children = (
+				D9F5CE9F1F04FA73004204E4 /* libyuv */,
+				4298DC07283236E600D174CC /* MLiveDeviceMgr.h */,
+				4298DC06283236E600D174CC /* MLiveDeviceMgr.m */,
+				4298DC0B2832370F00D174CC /* MLiveCCKeyChain.h */,
+				4298DC0A2832370F00D174CC /* MLiveCCKeyChain.m */,
+				4298DC042832366900D174CC /* MLiveDefines.h */,
+				427EDF442535DFE400C6498A /* CCMLiveMovieWriter.h */,
+				427EDF422535DFE400C6498A /* CCMLiveMovieWriter.m */,
+				D9942BE41F05E499006A55CE /* MLiveCCRender.h */,
+				D9942BDB1F05E465006A55CE /* MLiveCCRenderVTB.h */,
+				D9942BDC1F05E465006A55CE /* MLiveCCRenderVTB.m */,
+				D9942BDD1F05E465006A55CE /* MLiveCCRenderYUV.h */,
+				D9942BDE1F05E465006A55CE /* MLiveCCRenderYUV.m */,
+				42C1099722FA65CC0062C3B9 /* MLiveVideoFrameConverter.h */,
+				42C1099822FA65CC0062C3B9 /* MLiveVideoFrameConverter.m */,
+				D991B54D1F7CB66E00D4D991 /* MLiveVideoFrame.h */,
+				42BC9F481D98FD450022EF11 /* MLiveCCPlayer.h */,
+				D90D0A951EC431EC008377FA /* MLiveCCPlayer.pch */,
+				42CFD6A31D9900550035A0B6 /* MLiveCCPlayer.m */,
+				42BC9F4A1D98FD450022EF11 /* Info.plist */,
+			);
+			path = MLiveCCPlayer;
+			sourceTree = "<group>";
+		};
+		42BC9F531D98FD450022EF11 /* MLiveCCPlayerTests */ = {
+			isa = PBXGroup;
+			children = (
+				42BC9F541D98FD450022EF11 /* MLiveCCPlayerTests.m */,
+				42BC9F561D98FD450022EF11 /* Info.plist */,
+			);
+			path = MLiveCCPlayerTests;
+			sourceTree = "<group>";
+		};
+		D9D0CAAF204942B700B14CD1 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				D9D0CAB5204942B900B14CD1 /* libavcodec.a */,
+				D9D0CAB2204942B900B14CD1 /* libavformat.a */,
+				D9D0CAB1204942B900B14CD1 /* libavutil.a */,
+				D9D0CAB4204942B900B14CD1 /* libswresample.a */,
+				D9D0CAB3204942B900B14CD1 /* libswscale.a */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		D9F5CE9F1F04FA73004204E4 /* libyuv */ = {
+			isa = PBXGroup;
+			children = (
+				D9F5CEA01F04FA73004204E4 /* include */,
+				D9F5CEB51F04FA73004204E4 /* lib */,
+			);
+			path = libyuv;
+			sourceTree = "<group>";
+		};
+		D9F5CEA01F04FA73004204E4 /* include */ = {
+			isa = PBXGroup;
+			children = (
+				D9F5CEA11F04FA73004204E4 /* libyuv */,
+				D9F5CEB41F04FA73004204E4 /* libyuv.h */,
+			);
+			path = include;
+			sourceTree = "<group>";
+		};
+		D9F5CEA11F04FA73004204E4 /* libyuv */ = {
+			isa = PBXGroup;
+			children = (
+				D9F5CEA21F04FA73004204E4 /* basic_types.h */,
+				D9F5CEA31F04FA73004204E4 /* compare.h */,
+				D9F5CEA41F04FA73004204E4 /* convert.h */,
+				D9F5CEA51F04FA73004204E4 /* convert_argb.h */,
+				D9F5CEA61F04FA73004204E4 /* convert_from.h */,
+				D9F5CEA71F04FA73004204E4 /* convert_from_argb.h */,
+				D9F5CEA81F04FA73004204E4 /* cpu_id.h */,
+				D9F5CEA91F04FA73004204E4 /* format_conversion.h */,
+				D9F5CEAA1F04FA73004204E4 /* mjpeg_decoder.h */,
+				D9F5CEAB1F04FA73004204E4 /* planar_functions.h */,
+				D9F5CEAC1F04FA73004204E4 /* rotate.h */,
+				D9F5CEAD1F04FA73004204E4 /* rotate_argb.h */,
+				D9F5CEAE1F04FA73004204E4 /* row.h */,
+				D9F5CEAF1F04FA73004204E4 /* scale.h */,
+				D9F5CEB01F04FA73004204E4 /* scale_argb.h */,
+				D9F5CEB11F04FA73004204E4 /* scale_row.h */,
+				D9F5CEB21F04FA73004204E4 /* version.h */,
+				D9F5CEB31F04FA73004204E4 /* video_common.h */,
+			);
+			path = libyuv;
+			sourceTree = "<group>";
+		};
+		D9F5CEB51F04FA73004204E4 /* lib */ = {
+			isa = PBXGroup;
+			children = (
+				D9F5CEB61F04FA73004204E4 /* libyuv.a */,
+			);
+			path = lib;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXHeadersBuildPhase section */
+		42BC9F421D98FD450022EF11 /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				D991B54E1F7CB66F00D4D991 /* MLiveVideoFrame.h in Headers */,
+				D9F5CEB91F04FA73004204E4 /* convert.h in Headers */,
+				4298DC0D2832370F00D174CC /* MLiveCCKeyChain.h in Headers */,
+				D9F5CEC51F04FA73004204E4 /* scale_argb.h in Headers */,
+				D9F5CEC01F04FA73004204E4 /* planar_functions.h in Headers */,
+				D9F5CEC81F04FA73004204E4 /* video_common.h in Headers */,
+				D90D0A961EC431EC008377FA /* MLiveCCPlayer.pch in Headers */,
+				D9F5CEC71F04FA73004204E4 /* version.h in Headers */,
+				D9942BE51F05E499006A55CE /* MLiveCCRender.h in Headers */,
+				D9F5CEC61F04FA73004204E4 /* scale_row.h in Headers */,
+				D9F5CEBE1F04FA73004204E4 /* format_conversion.h in Headers */,
+				D9F5CEB81F04FA73004204E4 /* compare.h in Headers */,
+				D9F5CEC41F04FA73004204E4 /* scale.h in Headers */,
+				D9F5CEBA1F04FA73004204E4 /* convert_argb.h in Headers */,
+				D9942BDF1F05E465006A55CE /* MLiveCCRenderVTB.h in Headers */,
+				4298DC052832366900D174CC /* MLiveDefines.h in Headers */,
+				D9F5CEBF1F04FA73004204E4 /* mjpeg_decoder.h in Headers */,
+				D9F5CEBB1F04FA73004204E4 /* convert_from.h in Headers */,
+				D9F5CEBC1F04FA73004204E4 /* convert_from_argb.h in Headers */,
+				D9F5CEB71F04FA73004204E4 /* basic_types.h in Headers */,
+				42BC9F491D98FD450022EF11 /* MLiveCCPlayer.h in Headers */,
+				D9F5CEC21F04FA73004204E4 /* rotate_argb.h in Headers */,
+				D9F5CEBD1F04FA73004204E4 /* cpu_id.h in Headers */,
+				D9F5CEC31F04FA73004204E4 /* row.h in Headers */,
+				4298DC09283236E600D174CC /* MLiveDeviceMgr.h in Headers */,
+				427EDF462535DFE400C6498A /* CCMLiveMovieWriter.h in Headers */,
+				D9942BE11F05E465006A55CE /* MLiveCCRenderYUV.h in Headers */,
+				D9F5CEC11F04FA73004204E4 /* rotate.h in Headers */,
+				42C1099922FA65CC0062C3B9 /* MLiveVideoFrameConverter.h in Headers */,
+				D9F5CEC91F04FA73004204E4 /* libyuv.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXHeadersBuildPhase section */
+
+/* Begin PBXNativeTarget section */
+		42BC9F441D98FD450022EF11 /* MLiveCCPlayer */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 42BC9F591D98FD450022EF11 /* Build configuration list for PBXNativeTarget "MLiveCCPlayer" */;
+			buildPhases = (
+				42BC9F401D98FD450022EF11 /* Sources */,
+				42BC9F411D98FD450022EF11 /* Frameworks */,
+				42BC9F421D98FD450022EF11 /* Headers */,
+				42BC9F431D98FD450022EF11 /* Resources */,
+				42CFD6C01D9908350035A0B6 /* Copy Files */,
+				D90D0A941EC42D0F008377FA /* ShellScript */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = MLiveCCPlayer;
+			productName = MLiveCCPlayer;
+			productReference = 42BC9F451D98FD450022EF11 /* MLiveCCPlayer.framework */;
+			productType = "com.apple.product-type.framework";
+		};
+		42BC9F4E1D98FD450022EF11 /* MLiveCCPlayerTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 42BC9F5C1D98FD450022EF11 /* Build configuration list for PBXNativeTarget "MLiveCCPlayerTests" */;
+			buildPhases = (
+				42BC9F4B1D98FD450022EF11 /* Sources */,
+				42BC9F4C1D98FD450022EF11 /* Frameworks */,
+				42BC9F4D1D98FD450022EF11 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				42BC9F521D98FD450022EF11 /* PBXTargetDependency */,
+			);
+			name = MLiveCCPlayerTests;
+			productName = MLiveCCPlayerTests;
+			productReference = 42BC9F4F1D98FD450022EF11 /* MLiveCCPlayerTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		42BC9F3C1D98FD450022EF11 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0730;
+				ORGANIZATIONNAME = cc;
+				TargetAttributes = {
+					42BC9F441D98FD450022EF11 = {
+						CreatedOnToolsVersion = 7.3.1;
+						DevelopmentTeam = 5DUBUKB7F2;
+					};
+					42BC9F4E1D98FD450022EF11 = {
+						CreatedOnToolsVersion = 7.3.1;
+						DevelopmentTeam = N5QX398YJ3;
+					};
+				};
+			};
+			buildConfigurationList = 42BC9F3F1D98FD450022EF11 /* Build configuration list for PBXProject "MLiveCCPlayer" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				English,
+				en,
+			);
+			mainGroup = 42BC9F3B1D98FD450022EF11;
+			productRefGroup = 42BC9F461D98FD450022EF11 /* Products */;
+			projectDirPath = "";
+			projectReferences = (
+				{
+					ProductGroup = 42A289A31D9911B800C2A01D /* Products */;
+					ProjectRef = 42A289A21D9911B800C2A01D /* IJKMediaPlayer.xcodeproj */;
+				},
+			);
+			projectRoot = "";
+			targets = (
+				42BC9F441D98FD450022EF11 /* MLiveCCPlayer */,
+				42BC9F4E1D98FD450022EF11 /* MLiveCCPlayerTests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXReferenceProxy section */
+		42A289A71D9911B800C2A01D /* libIJKMediaPlayer.a */ = {
+			isa = PBXReferenceProxy;
+			fileType = archive.ar;
+			path = libIJKMediaPlayer.a;
+			remoteRef = 42A289A61D9911B800C2A01D /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+/* End PBXReferenceProxy section */
+
+/* Begin PBXResourcesBuildPhase section */
+		42BC9F431D98FD450022EF11 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		42BC9F4D1D98FD450022EF11 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		D90D0A941EC42D0F008377FA /* ShellScript */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "${SRCROOT}/generate_namespace_header.sh";
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		42BC9F401D98FD450022EF11 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				4298DC08283236E600D174CC /* MLiveDeviceMgr.m in Sources */,
+				42C1099A22FA65CC0062C3B9 /* MLiveVideoFrameConverter.m in Sources */,
+				4298DC0C2832370F00D174CC /* MLiveCCKeyChain.m in Sources */,
+				D9942BE21F05E465006A55CE /* MLiveCCRenderYUV.m in Sources */,
+				427EDF452535DFE400C6498A /* CCMLiveMovieWriter.m in Sources */,
+				42CFD6A41D9900550035A0B6 /* MLiveCCPlayer.m in Sources */,
+				D9942BE01F05E465006A55CE /* MLiveCCRenderVTB.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		42BC9F4B1D98FD450022EF11 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				42BC9F551D98FD450022EF11 /* MLiveCCPlayerTests.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		42BC9F521D98FD450022EF11 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 42BC9F441D98FD450022EF11 /* MLiveCCPlayer */;
+			targetProxy = 42BC9F511D98FD450022EF11 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin XCBuildConfiguration section */
+		42BC9F571D98FD450022EF11 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				CURRENT_PROJECT_VERSION = 1;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 6.0;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
+		42BC9F581D98FD450022EF11 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				CURRENT_PROJECT_VERSION = 1;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 6.0;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
+		42BC9F5A1D98FD450022EF11 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ARCHS = (
+					"$(ARCHS_STANDARD)",
+					i386,
+					x86_64,
+				);
+				CODE_SIGN_IDENTITY = "";
+				DEFINES_MODULE = YES;
+				DEVELOPMENT_TEAM = 5DUBUKB7F2;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				ENABLE_BITCODE = NO;
+				GCC_PREFIX_HEADER = MLiveCCPlayer/MLiveCCPlayer.pch;
+				HEADER_SEARCH_PATHS = MLiveCCPlayer/libyuv/include;
+				INFOPLIST_FILE = MLiveCCPlayer/Info.plist;
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 6.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				LIBRARY_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/MLiveCCPlayer/libyuv/lib",
+				);
+				MACH_O_TYPE = staticlib;
+				PRODUCT_BUNDLE_IDENTIFIER = "NETEASE-CC.MLiveCCPlayer";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
+				VALID_ARCHS = "arm64 armv7 armv7s";
+			};
+			name = Debug;
+		};
+		42BC9F5B1D98FD450022EF11 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ARCHS = (
+					"$(ARCHS_STANDARD)",
+					i386,
+					x86_64,
+				);
+				CODE_SIGN_IDENTITY = "";
+				DEFINES_MODULE = YES;
+				DEVELOPMENT_TEAM = 5DUBUKB7F2;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				ENABLE_BITCODE = NO;
+				GCC_PREFIX_HEADER = MLiveCCPlayer/MLiveCCPlayer.pch;
+				HEADER_SEARCH_PATHS = MLiveCCPlayer/libyuv/include;
+				INFOPLIST_FILE = MLiveCCPlayer/Info.plist;
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 6.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				LIBRARY_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/MLiveCCPlayer/libyuv/lib",
+				);
+				MACH_O_TYPE = staticlib;
+				PRODUCT_BUNDLE_IDENTIFIER = "NETEASE-CC.MLiveCCPlayer";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
+				VALID_ARCHS = "arm64 armv7 armv7s";
+			};
+			name = Release;
+		};
+		42BC9F5D1D98FD450022EF11 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				INFOPLIST_FILE = MLiveCCPlayerTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "NETEASE-CC.MLiveCCPlayerTests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Debug;
+		};
+		42BC9F5E1D98FD450022EF11 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				INFOPLIST_FILE = MLiveCCPlayerTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "NETEASE-CC.MLiveCCPlayerTests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		42BC9F3F1D98FD450022EF11 /* Build configuration list for PBXProject "MLiveCCPlayer" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				42BC9F571D98FD450022EF11 /* Debug */,
+				42BC9F581D98FD450022EF11 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		42BC9F591D98FD450022EF11 /* Build configuration list for PBXNativeTarget "MLiveCCPlayer" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				42BC9F5A1D98FD450022EF11 /* Debug */,
+				42BC9F5B1D98FD450022EF11 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		42BC9F5C1D98FD450022EF11 /* Build configuration list for PBXNativeTarget "MLiveCCPlayerTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				42BC9F5D1D98FD450022EF11 /* Debug */,
+				42BC9F5E1D98FD450022EF11 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 42BC9F3C1D98FD450022EF11 /* Project object */;
+}
